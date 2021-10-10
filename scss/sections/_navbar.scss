@@ -1,0 +1,28 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.menu {
+    @include gradient;
+
+	.logo {
+		width: 2.3rem;
+        border-radius: 50%;
+        background: $secondary;
+		border: 2px $black solid;
+		
+		&:hover {
+			opacity: 0.85;
+			border: 2px $secondary solid;
+		}
+	}
+
+	li {
+		padding: 0 0.7rem;
+
+		a {
+			color: $white !important;
+			text-transform: capitalize;
+			font-weight: 600;
+		}
+	}
+}

@@ -11121,5 +11121,135 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Gradient mixin */
+/* Absolute Center */
+/* Pulse Border */
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.btn-rounded {
+  position: relative;
+  padding: 0.7375rem 4.175rem 0.7375rem 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  background-color: #fff;
+}
+@media (max-width: 575.98px) {
+  .btn-rounded {
+    display: none;
+  }
+}
+.btn-rounded span {
+  position: absolute;
+  background-color: #1e78ff;
+  width: 2.3rem;
+  height: 2.3rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.btn-rounded i {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2.3rem;
+}
+.btn-rounded:hover {
+  background: linear-gradient(to right, rgba(30, 120, 255, 0.95), rgba(255, 138, 43, 0.95));
+  color: #fff;
+}
+.btn-rounded:hover span {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.btn-rounded:hover i {
+  color: #ff8a2b;
+}
+
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+.display-2--intro {
+  display: inline-block;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.display-2--description {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 1.2rem;
+  text-transform: none;
+}
+
+.menu {
+  background: linear-gradient(to right, rgba(30, 120, 255, 0.95), rgba(255, 138, 43, 0.95));
+}
+.menu .logo {
+  width: 2.3rem;
+  border-radius: 50%;
+  background: #ff8a2b;
+  border: 2px #000 solid;
+}
+.menu .logo:hover {
+  opacity: 0.85;
+  border: 2px #ff8a2b solid;
+}
+.menu li {
+  padding: 0 0.7rem;
+}
+.menu li a {
+  color: #fff !important;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.intro-section {
+  background: linear-gradient(to right, rgba(30, 120, 255, 0.95), rgba(255, 138, 43, 0.95));
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intros .video-box {
+  position: relative;
+}
+.intros .video-box a span i {
+  font-size: 6rem;
+  color: #ff8a2b;
+}
+.intros .video-box a span i:hover {
+  color: #1e78ff;
+  background-color: #ff8a2b;
+}
+
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid #ff8a2b;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
+}
+.border-animation--border-1 {
+  animation-delay: 1s;
+}
+.border-animation--border-2 {
+  animation-delay: 1.2s;
+  border: 0.35rem solid #ff8a2b;
+}
+.border-animation--border-3 {
+  animation-delay: 1.2s;
+  border: 0.55rem solid #4f94fc;
+}
 
 /*# sourceMappingURL=style.css.map */
