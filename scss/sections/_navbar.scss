@@ -7,8 +7,8 @@
 	.logo {
 		width: 2.3rem;
         border-radius: 50%;
-        background: $secondary;
-		border: 2px $black solid;
+        // background: $secondary;
+		border: 2px $secondary solid;
 		
 		&:hover {
 			opacity: 0.85;
