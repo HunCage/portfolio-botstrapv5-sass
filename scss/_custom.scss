@@ -11,6 +11,7 @@ $yellow:  #ffc107;
 $green:   #198754;
 $teal:    #20c997;
 $cyan:    #0dcaf0;
+$footer:    #151414;
 // scss-docs-end color-variables
 
 // scss-docs-start gray-color-variables
@@ -39,6 +40,8 @@ $dark:          $gray-900;
 // scss-docs-end theme-color-variables
 
 /* Accordion */
+$accordion-padding-y:                     1.5rem;
+$accordion-padding-x:                     1.5rem;
 $accordion-icon-color:                    $primary;
 $accordion-icon-active-color:             $secondary;
 
