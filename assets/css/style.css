@@ -11512,18 +11512,117 @@ textarea.form-control-lg {
   position: relative;
 }
 .contact-box__icon {
-  width: 4rem;
+  width: 2.5rem;
   stroke: #ff8a2b;
+  padding-top: 0.25rem;
+  margin-right: 0.5rem;
+}
+@media (min-width: 576px) {
+  .contact-box__icon {
+    width: 1.5rem;
+  }
 }
 .contact-box__info {
   padding: 0.4rem;
+  font-weight: 600;
 }
 .contact-box__info--title {
   color: #ff8a2b;
   text-decoration: none;
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .contact-box__info--title {
+    font-size: 1.4rem;
+  }
 }
 .contact-box__info--subtitle {
-  color: #adb5bd;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #6c757d;
+}
+@media (min-width: 576px) {
+  .contact-box__info--subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* social media */
+.footer-sm {
+  background-color: #212529;
+  font-size: 1.2rem;
+}
+.footer-sm a {
+  color: #ff8a2b;
+}
+.footer-sm a i {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+@media (min-width: 576px) {
+  .footer-sm a i {
+    font-size: 1.6rem;
+  }
+}
+
+/* Company Info */
+.company-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+.company-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.company-list li a {
+  color: #ff8a2b;
+  text-decoration: none;
+}
+.company-list li a:hover {
+  color: #1e78ff;
+}
+
+/* Footer Copyright */
+.footer-bottom {
+  background-color: #000;
+}
+.footer-bottom__copyright {
+  color: #6c757d;
+  font-weight: 400;
+}
+.footer-bottom__copyright a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+.footer-bottom__copyright a:hover {
+  color: #ff8a2b;
+  text-decoration: underline;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9;
+  border: 3px solid #ff8a2b;
+}
+.back-to-top i {
+  color: #ff8a2b;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.back-to-top:hover {
+  border: 3px solid #ffc107;
+}
+.back-to-top:hover i {
+  color: #ffc107;
 }
 
 /*# sourceMappingURL=style.css.map */
